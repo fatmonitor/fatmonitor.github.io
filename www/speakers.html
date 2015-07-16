@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<meta name="format-detection" content="telephone=no" />
+<meta name="msapplication-tap-highlight" content="no" />
+<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+<link rel="stylesheet/less" type="text/css" href="css/index.less">
+<script src="cordova.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/less.min.js"></script>
+<script src="db/speakers.json"></script>
+<script src="js/index.js"></script>
+<script>
+$(document).ready(function(){
+    var speakers = JSON.parse(data);
+    ﻿for (i in speakers) {
+        $('.speakers').append('<div class="speaker"><div class="name">' +  unescape(speakers[i].name) + '</div><div class="title">' +  unescape(speakers[i].title) + '</div></div>');
+    }
+}); 
+</script>
+<title>Gray Design Demo - Speakers</title>
+</head>
+<body class="page-speakers">
+    <header><span class="back"></span>Speakers<span class="home"></span></header>
+    <article class="speakers"></article>
+</body>
+</html>

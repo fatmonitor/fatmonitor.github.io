@@ -1,0 +1,72 @@
+body {
+	font-size: 100%;
+	color: #FFF;
+	height: 100vh;
+	background-color: #000;
+	
+	article {
+		margin-top: 50px;
+	}
+}
+header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
+	background-color: #ee3124;
+	padding: 10px 10px;
+	font-size: 200%;
+	line-height: 30px;
+	
+	&> span {
+		width: 30px;
+		height: 30px;
+		display: inline-block;
+		vertical-align: middle;
+		cursor: pointer;
+	}
+	.back {
+		background: url(../img/back-white.png) no-repeat scroll left center;
+	}
+	.home {
+		background: url(../img/home.png) no-repeat scroll center center;
+		background-size: contain;
+		float: right;
+	}
+}
+
+.page-home article > div {
+	width: 30%;
+	padding: 5px;
+	float: left;
+	&:nth-child(3n+1) {
+		margin-left: 5%;
+	}
+	&> a {
+		margin: 0 auto;
+		display: block;
+		background-color: rgba(255,255,255,0.8);
+		border-radius: 50%;
+		width: 70px;
+		height: 70px;
+		line-height: 70px;
+		text-align: center;
+		color: #000;
+		font-weight: bold;
+	}
+}
+.page-speakers {
+	.speakers {
+		.speaker {
+			background: url(../img/forward-black.png) no-repeat scroll right 10px center;
+			background-size: auto 30px;
+			padding: 5px 40px 5px 10px;
+			border-bottom: 1px solid rgba(255,255,255,0.3);
+			.name {
+				font-size: 180%;
+			}
+			.title {
+				font-size: 120%;
+			}
+		}
+	}
+}
